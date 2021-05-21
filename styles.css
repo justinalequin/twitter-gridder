@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.masterbox {
+
+    width: 35%;
+}
+
+.boxiforgot {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 45px;
+    grid-template-areas: 
+    "arrow title ."
+    " . tweetsnumber .";
+}
+
+#tweetsnumber {
+    grid-area: tweetsnumber;
+    margin-bottom: 5px;
+}
+
+.topbox {
+
+    display: grid;
+    grid-template-rows: 135px 80px 40px 50px 50px ;
+    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-areas:
+
+    "header header header header"
+    "avatar . more follow "
+    "title . . ."
+    "at . . ."
+    "bio bio bio ."
+    "following followers . ."
+    "tweets replies media likes ";
+}
+
+#arrow {
+    margin-top: 26px;
+    grid-area: arrow;
+    width: 45px;
+}
+
+#header {
+    width: 100%;
+    grid-area: header;
+
+}
+
+#avatar {
+    grid-area: avatar;
+    width: 60px;
+    border-radius: 30px;
+    margin-top: 43px;
+    margin-left: 20px;
+}
+
+#more {
+    grid-area: more;
+    width: 20px;
+    border: solid #1FA1F1 1px ;
+    border-radius: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 43px;
+    margin-left: 95px;
+}
+
+#followbutton {
+    grid-area: follow;
+    width: 75px;
+    height: 30px;
+    color: #1FA1F1;
+    border: solid #1FA1F1 1px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 35px;
+    margin-top: 43px;
+    
+}
+
+#title {
+    grid-area: title;
+  
+
+
+}
+
+#verified {
+    width: 25px;
+    grid-area: verified;
+    float: right;
+    margin-right: 40px;
+
+
+}
+
+#at {
+    grid-area: at;
+    color: #788798;
+    font-size: medium;
+
+}
+
+#bio {
+    grid-area: bio;
+}
+
+#following{
+    grid-area: following;
+    color: #788798;
+}
+
+#followers {
+    grid-area: followers;
+    color: #788798;
+}
+
+#tweets {
+    grid-area: tweets;
+    text-align: center;
+    color: #1FA1F1;
+    border-bottom: 3px solid #1FA1F1;
+    padding-bottom: 25px;
+}
+
+#replies {
+    grid-area: replies;
+    text-align: center;
+    color: #788798;
+ 
+}
+
+#media {
+    grid-area: media;
+    text-align: center;
+    color: #788798;
+}
+
+#likes {
+    grid-area: likes;
+    text-align: center;
+    color: #788798;
+}
+
+.middlebox {
+ 
+}
+
+#thetweet {
+    width: 110%;
+}
+
+.bottombox {
+   
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-areas: 
+    "home search bell dm";
+    width: 140%;
+    
+}
+
+#home {
+    width: 32px;
+    grid-area: home;
+    margin-left: 30px;
+}
+
+#search {
+    width: 32px;
+    grid-area: search;
+}
+
+#bell{
+    width: 32px;
+    grid-area: bell;
+}
+
+#dm {
+    width: 32px;
+    grid-area: dm;
+}
+
+p {
+    
+}
